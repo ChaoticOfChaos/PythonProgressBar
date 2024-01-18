@@ -49,9 +49,9 @@ def Bar(min: float, max: float, actual: float, get=False, Color="None", BG="None
         case 'black':
             printString += Back.BLACK
 
-    printString += f'{int((actual / max) * 100)}% '
-
     actualPercent = int((actual / max) * 100)
+
+    printString += f'{actualPercent}% '
 
     for i in range(actualPercent):
         printString += char
