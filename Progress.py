@@ -2,10 +2,10 @@ from colorama import Fore, Back
 
 def Bar(min: float, max: float, actual: float, get=False, Color="None", BG="None", char='|', space=' '):
 
-    if (len(char) > 1 or len(char) < 1):
+    if not (len(char) == 1):
         char = '|'
 
-    if (len(space) > 1 or len(space) < 1):
+    if not (len(space) == 1):
         space = ' '
 
     if (space == char):
