@@ -1,6 +1,6 @@
 from colorama import Fore, Back
 
-def Bar(min: float, max: float, actual: float, get=False, Color="None", BG="None", char='|', space=' '):
+def Bar(max: float, actual: float, get=False, Color="None", BG="None", char='|', space=' '):
 
     if not (len(char) == 1):
         char = '|'
