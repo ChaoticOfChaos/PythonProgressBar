@@ -5,7 +5,7 @@ def main():
     max = 1000
     for i in range(max):
         if i % 10 == 0:
-            print(Bar(0, max, i, True, 'cyan', 'magenta', '=', '-'), end='\r')
+            print(Bar(max, i, True, 'cyan', 'magenta', '=', '-'), end='\r')
         slp(0.1)
 
 if __name__ == '__main__':
